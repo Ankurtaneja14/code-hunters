@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <style>
+        a{
+            text-decoration: none;
+            color: white;
+        }
         body {
             font-family: Arial, sans-serif;
             background-color: #0a0b1a;
@@ -13,6 +17,8 @@
             padding: 0;
         }
         .navbar {
+            position: fixed;
+            width: 95%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -171,10 +177,10 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Skoop Ai</div>
+        <a href="#"><div class="logo">Skoop Ai</div></a>
         <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
             <button>View Details</button>
         </ul>
     </nav>
@@ -233,7 +239,7 @@
         </div>
     </header>
     
-    <section class="feature" >
+    <section class="feature" id="feature">
         <h1>Powerful Features</h1>
         <div class="features">
             <div class="features-list">
@@ -347,7 +353,7 @@
             <img src="img/MacBook Pro 14_ - 8.png" alt="Dashboard">
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="subscribe">
             <h2>Stay Updated</h2>
             <input type="email" placeholder="Enter your email">
